@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 const urlArray = ["lol.com"];
 
 app.get('/', function(req, res) {
-  res.sendFile(process.cwd() + '/views/index.html');
+  res.sendFile(process.cwd() + '/index.html');
 });
 
 // Your first API endpoint
@@ -65,3 +65,4 @@ app.get('/api/shorturl/:short_url', (req,res)=>{
 app.listen(port, function() {
   console.log(`Listening on port ${port}`);
 });
+
